@@ -242,7 +242,7 @@ export default class Dapp extends React.Component<Props, State> {
             {!this.isWalletConnected() ? <button className="primary" disabled={this.provider === undefined} onClick={() => this.connectWallet()}>Connect Wallet</button> : null}
 
             <div className="use-block-explorer">
-              Mint the <strong>Legacy of Bitcoin</strong> for a <strong>mythical inscription</strong>, preserved for eternity on the Bitcoin Blockchain!  
+              Inspired by Bitcoin's past, present & future, explore the <strong>Legacy of Bitcoin</strong> through <strong>mythical inscription</strong>, preserved for eternity on the Bitcoin Blockchain!  
               <a href={"https://ordinals.com/inscription/5c6fddfbc998d38f64900fedbfec0d0ea0aaf57fc4444c0754c4347ea41089f2i0"} target="_blank">{" WE ARE SATOSHI"}</a> <span className="emoji">🪙</span>
             </div>
 
