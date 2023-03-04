@@ -10,24 +10,24 @@ const CollectionConfig: CollectionConfigInterface = {
   // yarn rename-contract NEW_CONTRACT_NAME
   // Please DO NOT change it manually!
   contractName: 'LEGACYOFBITCOIN',
-  tokenName: 'My NFT Token',
-  tokenSymbol: 'MNT',
-  hiddenMetadataUri: 'ipfs://__CID__/hidden.json',
-  maxSupply: 10000,
+  tokenName: 'LEGACYOFBITCOIN',
+  tokenSymbol: 'SAGA',
+  hiddenMetadataUri: 'ipfs://QmSyo9pjUig3eHbVroF57wfKCkjnDY1EixRngHu1webQiy/hidden.json',
+  maxSupply: 500,
   whitelistSale: {
-    price: 0.05,
+    price: 0.08,
     maxMintAmountPerTx: 1,
   },
   preSale: {
-    price: 0.07,
+    price: 0.09,
     maxMintAmountPerTx: 2,
   },
   publicSale: {
-    price: 0.09,
+    price: 0.1,
     maxMintAmountPerTx: 5,
   },
   contractAddress: null,
-  marketplaceIdentifier: 'my-nft-token',
+  marketplaceIdentifier: 'legacy-of-bitcoin',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,
 };
