@@ -26,7 +26,7 @@ const CollectionConfig: CollectionConfigInterface = {
     price: 0.1,
     maxMintAmountPerTx: 5,
   },
-  contractAddress: null,
+  contractAddress: '0x42F19A6cEA08d1b0AeCD75F839c16F1605A3bc03',
   marketplaceIdentifier: 'legacy-of-bitcoin',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,
