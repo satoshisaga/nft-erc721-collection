@@ -4,8 +4,13 @@
 
 // general.scss
 
+@import url(http://fonts.googleapis.com/css?family=Cutive+Mono|Open+Sans:400italic,700italic,400,700);
+$cutive: 'Cutive Mono';   
+
+
 :root {
   font-size: 18px;
+  
 }
 
 body {
@@ -16,6 +21,9 @@ body {
   @apply text-white;
 
   @apply bg-black;
+
+  font-family: $cutive;
+
 }
 
 a, a:link, a:visited {
@@ -305,13 +313,13 @@ label {
     .preview {
       @apply p-8;
 
-      @apply bg-orange-900/50;
+      @apply bg-black;
       
       img {
         @apply m-auto;
         @apply max-h-52;
         
-        filter: saturate(0);
+    //    filter: saturate(0);
       }
     }
 
