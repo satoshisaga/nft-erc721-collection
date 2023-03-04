@@ -1,5 +1,11 @@
 // SPDX-License-Identifier: MIT
 
+// ░█▀▀░█▀█░▀█▀░█▀█░█▀▀░█░█░▀█▀░░░█▀▀░█▀█░█▀▀░█▀█
+// ░▀▀█░█▀█░░█░░█░█░▀▀█░█▀█░░█░░░░▀▀█░█▀█░█░█░█▀█
+// ░▀▀▀░▀░▀░░▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀░░░▀▀▀░▀░▀░▀▀▀░▀░▀
+
+// 01010111 01000101  01000001 01010010 01000101  01010011 01000001 01010100 01001111 01010011 01001000 01001001 
+
 pragma solidity >=0.8.9 <0.9.0;
 
 import 'erc721a/contracts/extensions/ERC721AQueryable.sol';
@@ -7,7 +13,7 @@ import '@openzeppelin/contracts/access/Ownable.sol';
 import '@openzeppelin/contracts/utils/cryptography/MerkleProof.sol';
 import '@openzeppelin/contracts/security/ReentrancyGuard.sol';
 
-contract YourNftToken is ERC721AQueryable, Ownable, ReentrancyGuard {
+contract LEGACYOFBITCOIN is ERC721AQueryable, Ownable, ReentrancyGuard {
 
   using Strings for uint256;
 
