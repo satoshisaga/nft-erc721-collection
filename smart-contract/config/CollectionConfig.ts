@@ -15,7 +15,7 @@ const CollectionConfig: CollectionConfigInterface = {
   hiddenMetadataUri: 'ipfs://QmSyo9pjUig3eHbVroF57wfKCkjnDY1EixRngHu1webQiy/hidden.json',
   maxSupply: 500,
   whitelistSale: {
-    price: 0.08,
+    price: 0.09,
     maxMintAmountPerTx: 1,
   },
   preSale: {
@@ -23,10 +23,10 @@ const CollectionConfig: CollectionConfigInterface = {
     maxMintAmountPerTx: 2,
   },
   publicSale: {
-    price: 0.1,
+    price: 0.09,
     maxMintAmountPerTx: 5,
   },
-  contractAddress: '0x42F19A6cEA08d1b0AeCD75F839c16F1605A3bc03',
+  contractAddress: '0xe4C6985D7877501F62d8717d0A5497A47a996514',
   marketplaceIdentifier: 'legacy-of-bitcoin',
   marketplaceConfig: Marketplaces.openSea,
   whitelistAddresses,
