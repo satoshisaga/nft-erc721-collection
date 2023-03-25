@@ -2,9 +2,11 @@
 
 // ░█▀▀░█▀█░▀█▀░█▀█░█▀▀░█░█░▀█▀░░░█▀▀░█▀█░█▀▀░█▀█
 // ░▀▀█░█▀█░░█░░█░█░▀▀█░█▀█░░█░░░░▀▀█░█▀█░█░█░█▀█
-// ░▀▀▀░▀░▀░░▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀░░░▀▀▀░▀░▀░▀▀▀░▀░▀
+// ░▀▀▀░▀░▀░░▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀░░░▀▀▀░▀░▀░▀▀▀░▀░▀                                                       
 
-// 01010111 01000101  01000001 01010010 01000101  01010011 01000001 01010100 01001111 01010011 01001000 01001001 
+// +-+-+-+-+ +-+-+-+ +-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+
+// |F|i|n|d| |o|u|t| |w|h|o| |N|a|k|a|m|o|t|o| |w|a|s|
+// +-+-+-+-+ +-+-+-+ +-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+
 
 pragma solidity >=0.8.9 <0.9.0;
 
@@ -132,21 +134,8 @@ contract LEGACYOFBITCOIN is ERC721AQueryable, Ownable, ReentrancyGuard {
   }
 
   function withdraw() public onlyOwner nonReentrant {
-    // Let the Saga continue
     // =============================================================================
-    (bool hs, ) = payable(0x7fd7b59778fB51378bBf6e73b3E864ad4F78e4A1).call{value: address(this).balance * 15 / 100}('');
-    require(hs);
-    // =============================================================================
-    (bool es, ) = payable(0xD44B6686c5c77B62e59F57471AeD8851038c7c51).call{value: address(this).balance * 15 / 100}('');
-    require(es);
-    // =============================================================================
-   (bool ds, ) = payable(0x1EBcD8a0177B3d22632826FD1e95EeDc20c04e7b).call{value: address(this).balance * 15 / 100}('');
-    require(ds);
-       // =============================================================================
-   (bool ps, ) = payable(0x3a609C0afBcd925B90cdF2A825189f6a0Ae29BEb).call{value: address(this).balance * 15 / 100}('');
-    require(ps);
-    // =============================================================================
-    // This will transfer the remaining contract balance to the owner.
+    // // Let the Saga continue...
     // =============================================================================
     (bool os, ) = payable(owner()).call{value: address(this).balance}('');
     require(os);
@@ -157,3 +146,5 @@ contract LEGACYOFBITCOIN is ERC721AQueryable, Ownable, ReentrancyGuard {
     return uriPrefix;
   }
 }
+
+// 01010111 01000101  01000001 01010010 01000101  01010011 01000001 01010100 01001111 01010011 01001000 01001001 
