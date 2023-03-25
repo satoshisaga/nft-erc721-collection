@@ -243,7 +243,7 @@ export default class Dapp extends React.Component<Props, State> {
 
             <div className="use-block-explorer">
               Inspired by Bitcoin's past, present & future, explore the <strong>Legacy of Bitcoin</strong> through <strong>mythical inscription</strong>, preserved for eternity on the Bitcoin Blockchain!  
-              <a href={"https://ordinals.com/inscription/5c6fddfbc998d38f64900fedbfec0d0ea0aaf57fc4444c0754c4347ea41089f2i0"} target="_blank">{" WE ARE SATOSHI"}</a> <span className="emoji">🪙</span>
+              <span className="emoji">🪙</span>
             </div>
 
             {!this.isWalletConnected() || this.state.isWhitelistMintEnabled ?
