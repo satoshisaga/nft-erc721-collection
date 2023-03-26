@@ -16,15 +16,15 @@ const CollectionConfig: CollectionConfigInterface = {
   maxSupply: 500,
   whitelistSale: {
     price: 0.09,
-    maxMintAmountPerTx: 1,
+    maxMintAmountPerTx: 2,
   },
   preSale: {
     price: 0.09,
-    maxMintAmountPerTx: 2,
+    maxMintAmountPerTx: 20,
   },
   publicSale: {
     price: 0.09,
-    maxMintAmountPerTx: 5,
+    maxMintAmountPerTx: 20,
   },
   contractAddress: '0xEe1684128264aaa0396Ef13B11ae491C09d2BD1e',
   marketplaceIdentifier: 'legacy-of-bitcoin',
